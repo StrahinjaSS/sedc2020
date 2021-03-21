@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  margin: 0;
+  padding: 0;
+}
+
+header nav .logo {
+  height: 60px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 10px;
+  border-top: 5px solid #29ca8e;
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  list-style-type: none;
+}
+
+header nav .nav-links li {
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .nav-links li:hover {
+  background-color: #29ca8e;
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #29ca8e;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav .logo {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  header nav .nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style-type: none;
+    height: 100%;
+  }
+
+  header nav .nav-links li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+  }
+
+  header nav .nav-links li:hover {
+    background-color: #29ca8e;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #29ca8e;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav .logo {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 20px;
+    /* padding-right: 50px; */
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  header nav .nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style-type: none;
+    height: 100%;
+  }
+
+  header nav .nav-links li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+  }
+
+  header nav .nav-links li:hover {
+    background-color: #29ca8e;
+    color: white;
+  }
+}

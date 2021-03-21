@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.student-reviews {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.student-reviews .student-reviews-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.student-reviews .reviews-three .andrio {
+  display: none;
+}
+
+.student-reviews .reviews-three .camila {
+  display: none;
+}
+
+.student-reviews .reviews-three .jackson {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.student-reviews .reviews-three .jackson .jackson-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.student-reviews .reviews-three .jackson .jackson-image img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.student-reviews .reviews-three .jackson .blue-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.student-reviews .reviews-three .jackson .blue-stars div {
+  color: #3f51b5;
+  margin-right: 3px;
+}
+
+.student-reviews .grey-balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.student-reviews .grey-balls div {
+  margin-right: 20px;
+  color: lightgrey;
+}
+
+.student-reviews .grey-balls .dark-gray div {
+  color: darkslategrey;
+  margin: 0%;
+}
+
+@media screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .student-reviews {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 920px) / 2);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .student-reviews .student-reviews-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+  }
+
+  .student-reviews .reviews-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+
+  .student-reviews .reviews-three .andrio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .student-reviews .reviews-three .camila {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .student-reviews .reviews-three .jackson {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .student-reviews .reviews-three .jackson-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .student-reviews .reviews-three .jackson-image img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .student-reviews .reviews-three .blue-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .student-reviews .reviews-three .blue-stars div {
+    color: #3f51b5;
+    margin-right: 3px;
+  }
+
+  .student-reviews .grey-balls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .student-reviews .grey-balls div {
+    margin-right: 20px;
+    color: lightgrey;
+  }
+
+  .student-reviews .grey-balls .dark-gray div {
+    color: darkslategrey;
+    margin: 0%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .student-reviews {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .student-reviews .student-reviews-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+  }
+
+  .student-reviews .reviews-three {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    padding: 20px 0px;
+  }
+
+  .student-reviews .reviews-three .andrio {
+    display: none;
+  }
+
+  .student-reviews .reviews-three .camila {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .student-reviews .reviews-three .jackson {
+    display: none;
+  }
+
+  .student-reviews .reviews-three .jackson-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .student-reviews .reviews-three .jackson-image img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .student-reviews .reviews-three .blue-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .student-reviews .reviews-three .blue-stars div {
+    color: #3f51b5;
+    margin-right: 3px;
+  }
+
+  .student-reviews .grey-balls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .student-reviews .grey-balls div {
+    margin-right: 20px;
+    color: lightgrey;
+  }
+
+  .student-reviews .grey-balls .dark-gray div {
+    color: darkslategrey;
+    margin: 0%;
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Muli;
+  src: url(muli/Muli.ttf);
+}
+@font-face {
+  font-family: Nunito;
+  src: url(Nunito/Nunito-Regular.ttf);
+}
+
+body {
+  font-family: Muli;
+}
+
+@media screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: Muli;
+    src: url(muli/Muli.ttf);
+  }
+  @font-face {
+    font-family: Nunito;
+    src: url(Nunito/Nunito-Regular.ttf);
+  }
+
+  body {
+    font-family: Muli;
+    max-width: none;
+    }
+  }
+}
