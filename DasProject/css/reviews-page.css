@@ -1,0 +1,145 @@
+.popular-courses {
+    background-color: #fff;
+    padding: 0 16px 130px;
+}
+
+.popular-courses-heading {
+    height: 124px;
+    text-align: center;
+}
+
+
+.popular-courses-card {
+    display: none;
+    background: var(--grei);
+}
+
+.popular-courses-card:first-child {
+    display: block;
+}
+
+.course-image-and-info {
+    background: url(../images/courses-image5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 356px;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start
+}
+.popular-courses-card-container div:nth-of-type(2) .course-image-and-info {
+    background: url(../images/courses-image3.jpg);
+}
+
+.popular-courses-card-container div:nth-of-type(3) .course-image-and-info {
+    background: url(../images/courses-image4.jpg);
+}
+
+.course-opacity-ribbon {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(2,0,36,0.4) 5%, rgba(156,156,156,0.05) 85%);
+    padding: 23px 18px;
+}
+.course-date, .course-length {
+    padding: 0 6px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.course-name-description {
+    height: 100px;
+    padding: 0 0 0 24px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+}
+.course-name-description h3 {
+    margin: 0;
+}
+
+.course-teacher-price {
+    height: 78px;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.course-teacher a {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    width: max-content;
+
+}
+
+.course-teacher img {
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+}
+
+.course-teacher p {
+    margin-left: 10px;
+}
+
+.course-price {
+    height: 30px;
+    margin-right: 26px;
+    color: white;
+    font-size: 13px;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.price-free {
+    width: 47px;
+    background-color: #3f51b5;
+}
+
+
+
+@media only screen and (min-width: 601px) {
+
+    .price-nonfree {
+        width: 70px;
+        background-color: var(--vib-green);
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+    .popular-courses-card-container {
+        display: flex;
+        gap: 22px;
+    }
+
+    .popular-courses-card, .popular-courses-card:first-child {
+        
+        display: initial;
+        width: 33%;
+    }
+
+
+    .course-teacher p {
+        margin-right: 5px;
+    }
+}

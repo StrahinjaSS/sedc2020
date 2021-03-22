@@ -1,0 +1,174 @@
+p, h1, h2, h3, ul {
+    margin: 0;
+}
+
+.teacher-buttons {
+    display: none;
+}
+
+.teacher-card {
+    display: block;
+}
+
+.teacher-image {
+    background: url(../images/author-image1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 300px;
+    margin: 30px calc((100% - 300px) / 2);
+    border-radius: 10px;
+    
+}
+
+.teacher-name-caption, .teacher-about {
+    
+    padding: 20px calc((100% - 300px) / 2);
+    background-color: #f4f4f4;
+}
+
+.teacher-name-caption p {
+    margin-bottom: 10px;
+}
+
+.teacher-name {
+    font-size: 20px;
+}
+
+.teacher-courses {
+    padding: 20px calc((100% - 300px) / 2);
+    background-color: white;
+}
+
+.teacher-courses ul {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+    font-size: 17px;
+
+}
+
+.teacher-courses ul a {
+    color: var(--vib-green);
+}
+
+.teacher-about {
+    line-height: 1.7;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+    .teacher-info-container {
+        display: flex;
+        padding: 14px 16px 0 16px;
+        margin-bottom: 270px;
+    }
+
+
+    .teacher-image {
+        margin: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        
+    }
+
+    .teacher-details {
+        width: 100%;
+    }
+    
+    .teacher-name-caption {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 60px 0 5px 60px;
+        height: 250px;
+    }
+
+    .teacher-courses {
+        position: absolute;
+        left: 0;
+        top: 350px;
+
+        display: flex;
+        padding: 0;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .teacher-courses ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .teacher-courses ul a {
+        width: 45%;
+    }
+
+    .teacher-about {
+        padding: 30px calc((100% - 500px) / 2);
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .teacher-info-container {
+
+        margin-bottom: 220px;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+    .teacher-info-container {
+        margin-bottom: 100px;
+    }
+
+    .teacher-courses {
+        flex-direction: column;
+        position: static;
+        margin-top: 0;
+        
+    }
+    
+    .teacher-name-caption {
+        width: 250px;
+        height: 250px;
+        border-bottom-right-radius: 0;
+    }
+
+    .teacher-image {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        
+    }
+
+    .teacher-courses ul {
+        flex-direction: column;
+    }
+
+    .teacher-details {
+        width: auto;
+
+    }
+
+    .teacher-about {
+        position: absolute;
+        top: 372px;
+        left: calc((100% - 900px)/2);
+        width: 475px;
+        padding: 20px 40px;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}

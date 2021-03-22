@@ -1,0 +1,100 @@
+header {
+    border-top: 6px solid var(--vib-green);
+    padding-left: calc((100vw - 900px)/2);
+    padding-left: calc((100vw - 900px)/2);
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    font-weight: 600;
+    height: 62px;
+    padding: 0 16px;
+    
+}
+
+.logo p {
+    margin: 0;
+}                                                         
+nav {
+
+    width: 100%; 
+
+}
+nav a {
+    display: flex;
+    height: 39px;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+   
+
+}
+
+nav a:hover {
+    background-color: var(--vib-green-translucent);
+    color: white;
+}
+
+nav a:focus, nav a:active, .active-nav-link, nav a:hover.active-nav-link {
+    background-color: var(--vib-green);
+    color: white;
+}
+
+
+
+
+@media only screen and (min-width: 601px) {
+
+    header {
+        display: flex;
+    }
+
+    nav {
+        width: max-content;
+        display: flex;
+        
+    }
+
+    nav a {
+        display: flex;
+        height: 100%;
+        padding: 0 7px;
+        font-size: 14px;
+        
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    header {
+        height: 82px;
+
+    }
+
+    .logo {
+        padding: 0 calc(100vw/15) 0 0;
+        height: 100%;
+    }
+    
+    nav {
+        display: flex;
+        
+    }
+
+    nav a {
+        padding: 0 20px;
+        
+    }
+
+
+
+}
+

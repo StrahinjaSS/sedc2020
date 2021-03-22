@@ -1,0 +1,163 @@
+
+.course-container .course-image-and-info {
+    background: url(../images/courses-image2.jpg);
+
+}
+
+.date-text, .length-text, .course-teacher-text {
+    display: none;
+}
+
+.enroll {
+    height: 60px;
+    width: 100px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.enroll:focus, .enroll:active {
+    border: 3px solid rgba( 41, 202, 142, 0.28 );
+    background: var(--vib-green-translucent);
+}
+
+.enroll:hover {
+    cursor: pointer;
+}
+
+.course-enroll {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.course-share-icons {
+    text-align: end;
+    
+}
+
+.course-share-icons > a {
+    display: none;
+    font-size: 22px;
+    color: var(--vib-green);
+    padding-right: 6px;
+    padding-left: 6px
+}
+
+.course-share-icons a:first-child {
+    display: inline-block;
+}
+
+.other-courses-container h2 {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .course-share-icons {
+        position: absolute;
+        top: 376px;
+        left: calc(100% - (28px * 4 + 67px));
+
+    }
+
+    .course-share-icons > a {
+        display: inline-block;
+    }
+
+    .course-container .course-image-and-info {
+        height: 300px;
+        width: 370px;
+        position: absolute;
+        top: 103px;
+        left: 16px;
+    }
+
+    .course-container .course-date {
+        position: absolute;
+        left: 100px;
+    }
+
+    .popular-courses-heading {
+        margin-left: calc(16px + 370px);
+    }
+
+    .course-container .course-teacher-price {
+        position: absolute;
+        left: calc(16px + 370px + 10px);
+        top: 168px;
+        width: calc(100% - (16px * 2 + 370px + 10px));
+        border: none;
+    }
+
+    .course-container .course-description {
+        margin-top: 240px;
+    }
+
+
+
+    .course-container .course-date  {
+        position: absolute;
+        top: 180px;
+        left: calc(16px + 370px + 10px);
+        color: black;
+        width: 300px;
+        display: block;
+    }
+
+    .date-text, .length-text {
+        display: inline-block;
+        width: 110px;
+        
+    }
+
+
+    .course-container .course-length {
+        position: absolute;
+        top: 210px;
+        left: calc(16px + 370px + 10px);
+        color: black;
+        display: block;
+        width: 300px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .popular-courses-buttons {
+        display: flex;
+    }
+
+    .course-container .course-image-and-info {
+        top: 158px;
+        left: calc((100% - 900px) / 2);
+    }
+
+    .course-container .course-teacher-price {
+        position: absolute;
+        left: calc((100% - 900px) / 2 + 10px + 370px);
+        top: 235px;
+        width: 450px;
+        border: none;
+    }
+
+    .course-description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .course-description p {
+        display: inline-block;
+        width: 60ch;
+    
+    }
+
+    .course-share-icons {
+        top: 430px;
+        left: calc((100% - 900px) / 2 + 297px + 370px);
+    }
+}

@@ -1,0 +1,116 @@
+
+.teachers, .student-reviews {
+    padding: 0 16px 110px;
+    background-color: var(--grei); 
+    
+}
+
+.teachers p, .popular-courses p, .student-reviews p {
+    opacity: 0.6;
+    margin: 0;
+}
+
+
+.teachers-heading, .popular-courses-heading, .student-reviews-heading {
+    height: 150px;
+    color: #353535;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers-heading h2, .popular-courses-heading h2, .student-reviews-heading h2 {
+    margin: 0;
+}
+.teacher-card {
+    display: none;
+}
+.teacher-card:first-child {
+    display: block;
+}
+.teacher-image-link {
+    display: block;
+    font-size: 0;
+}
+
+.teacher-card img, .popular-courses-card img {
+    width: 100%;
+}
+
+.profile-link {
+    height: 84px;
+    padding: 0 0 0 30px;
+    background-color: #fff;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.social-links-teachers {
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    height: 54px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.social-links-teachers i {
+    padding: 0 15px;
+    font-size: 24px;
+}
+.social-links-teachers i:first-child {
+    padding-left: 30px;
+}
+
+.teacher-buttons, .popular-courses-buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+.teacher-buttons button, .popular-courses-buttons button {
+    border: none;
+    background: #d6d6d6;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    margin: 30px 8px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (min-width: 601px) {
+
+    .teacher-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(50vw - (50vw - 32px));
+    }
+
+    .teacher-card {
+        display: block;
+        width: calc(50vw - 32px);
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+
+
+    .teacher-cards-container {
+        justify-content: flex-start;
+        gap: 28px;
+    }
+
+    .teacher-card {
+        width: calc(900px / 4 - 28px);
+    }
+
+
+}
+

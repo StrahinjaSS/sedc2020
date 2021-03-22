@@ -1,0 +1,77 @@
+
+.three-points .point  {
+    margin: 0 16px;
+
+    padding: 70px 42px 66px;
+
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.three-points .point:last-child {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+
+.point-number {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 601px) {
+
+    .three-points {
+        display: flex;
+        
+    }
+
+    .three-points .point {
+        border: 1px solid #d6d6d6;
+    }
+
+    .point {
+        flex: 33%;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+
+
+    
+    .three-points .point {
+        padding: 60px 42px 0;
+        margin: 0;
+        height: 340px;
+        width: 360px;
+        margin-right: 30px;
+    }
+    .point p.point-number {
+        margin: 0;
+        font-size: 24px;
+    }
+    .point h3 {
+        margin: 20px 0;
+    }
+    .point p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+
+}
+
+

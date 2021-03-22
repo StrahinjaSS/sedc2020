@@ -1,0 +1,198 @@
+
+.start-journey {
+    padding: 0 16px 58px;
+
+
+}
+
+.journey-points {
+    margin-bottom: 65px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.journey-heading {
+    padding: 0 16px;
+    margin-bottom: 18px;
+}
+
+.journey-points .point {
+
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.journey-points .journey-text {
+    flex: 75%;
+}
+
+.point .fas {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--vib-green);
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.signup {
+    background-color: #252020;
+    color: white;
+    padding: 34px 28px 22px;
+    
+
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.signup-form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.signup h3 {
+    margin: 0 0 16px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+
+.signup-form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 18px 12px;
+    color: white;
+}
+
+.signup-form button {
+    width: max-content;
+    height: 50px;
+    width: 112px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid white;
+    color: #252020;
+    align-self: center;
+    margin-top: 30px;
+    transition: color 0.8s, background-color 0.8s;
+    
+}
+
+.signup-form button:hover, .signup-form button:active, .signup-form button:focus  {
+    color: white;
+    background-color: #252020;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+
+    .start-journey {
+        display: flex;
+        flex-flow: wrap column;
+    }
+
+    .journey-points {
+        flex-direction: column;
+    }
+
+
+    .journey-points .point {
+        
+        padding: 0 28px;
+    }
+
+    .signup {
+        height: calc(100vw/1.667);
+        width: calc(100vw/1.667);
+        border-radius: 50%;
+        padding: 0;
+        
+        align-self: center;
+        justify-content: center;
+    }
+
+    .signup-form  {
+        
+        width: calc(100vw/2.2);
+        align-self: center;
+        
+        
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .start-journey {
+        display: flex;
+        flex-flow: nowrap row;
+        padding-left: calc(100vw/6.93);
+        padding-right: calc(100vw/6.93);
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .journey-content {
+        width: 45%;
+    }
+
+    .journey-heading {
+        padding: 0;
+    }
+
+    .journey-points {
+        flex-direction: column;
+    }
+
+    .journey-points .point {
+        padding: 0 28px;
+    }
+
+    .journey-text h3 {
+        margin: 20px 0 0 0;
+    }
+
+    .signup {
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        padding: 0;
+        
+        align-self: center;
+        justify-content: center;
+    }
+
+    .signup-form  {
+        
+        width: 70%;
+        align-self: center;
+        
+        
+    }
+
+
+
+
+}
+

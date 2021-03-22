@@ -1,0 +1,38 @@
+:root {
+    --vib-green: rgb(41, 202, 142);
+    --vib-green-translucent: #29ca8f91;
+    --grei: #f9f9f9;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-family: 'Mulish', sans-serif;
+    background-color: white;
+
+
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+    main .slider, 
+    main .three-points, 
+    main .start-journey, 
+    main .teachers, 
+    main .popular-courses, 
+    main .student-reviews, 
+    main .contact-us, 
+    body footer,
+    main .teacher-info-container {
+        padding: 40px calc((100% - 900px)/2);
+    }
+}
