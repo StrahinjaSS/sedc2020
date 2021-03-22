@@ -1,0 +1,49 @@
+{
+    "subtleBrackets.pairs": [
+
+
+        {
+            "open": "(",
+            "close": ")",
+            "style": {
+                "color": "black",
+                "backgroundColor": "gray",
+                "borderStyle": "none"
+              },
+              
+        },
+        {
+            "open": "[",
+            "close": "]",
+            "style": {
+                "color": "black",
+                "backgroundColor": "gray",
+                "borderStyle": "none"
+              }
+        },
+        {
+            "open": "{",
+            "close": "}",
+            "style": {
+                "color": "black",
+                "backgroundColor": "gray",
+                "borderStyle": "none"
+              }
+        }
+        {
+            "open": "<",
+            "close": ">",
+            "style": {
+                "color": "black",
+                "backgroundColor": "gray",
+                "borderStyle": "none"
+              }
+        }
+    ],
+    "subtleBrackets.style": {
+
+ 
+        
+    },
+    "subtleBrackets.parse": false
+}
