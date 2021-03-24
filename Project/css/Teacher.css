@@ -1,0 +1,20 @@
+.teacher-box-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teachers-box.main {
+    padding: 30px;
+    margin: 30px 0px;
+    background-color: white;
+}
+
+.teacher-img {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.teacher-box-icons.main {
+    padding-left: 0px;
+}

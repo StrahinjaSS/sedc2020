@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: rgb(117, 105, 91);
+    border-top: 5px solid #29ca8e;
+    word-break: break-word;
+    font-family: mulish, sans-serif;
+}
+
+input, textarea {
+    font-family: mulish, sans-serif;
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+}
+
+.button {
+    padding: 15px;
+    margin: 10px 0%;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+}
+
+.opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.trending {
+    clear: both;
+}
+
+.journey-main {
+    margin: 0 2%;
+}
+
+.teachers, .student-reviews {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #252020;
+    color: white;
+}
+
+header {
+    padding: 0px;
+}
+
+.slider-text, .trending, .journey-main, .teachers, .popular-courses, .student-reviews, .contact-us, footer {
+    padding: 60px 20px;
+}
+
+.trending {
+    padding-bottom: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(117, 105, 91);
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+    font-family: nunito, sans-serif;
+}
+
+.title {
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.title p {
+    margin: 0px;
+}
+
+.navigation {
+    border: none;
+    background-color: transparent;
+    color: rgb(117, 105, 91);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0px 20px;
+    }
+    .journey-main {
+        margin: 0%;
+    }
+    .trending-box, .teacher-box, .popular-courses-box, .contact-us-box-form {
+        margin-right: 30px;
+    }
+    .trending-box:last-child, .teacher-box:nth-child(2), .teacher-box:last-child, .popular-courses-box:nth-child(4) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        padding: 0% calc((100% - 900px)/2);
+    }
+    .teacher-box:nth-child(2), .student-review-box {
+        margin-right: 30px;
+    }
+    .student-review-box:nth-child(7) {margin-right:0px;}
+    .slider-text, .trending, .journey-main, .teachers, .popular-courses, .student-reviews, .contact-us, footer {
+        padding: 100px calc((100% - 900px)/2);
+    }
+    .trending {
+        padding-bottom: 0px;
+    }
+}

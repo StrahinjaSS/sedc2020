@@ -1,0 +1,11 @@
+* {box-sizing: border-box;}
+body {margin:0px; font-family: muli; color: tan}
+.menu {width: 100%}
+.menu li:hover{background-color: #29ca8e;}
+.menu ul {list-style-type: none; padding:0px; margin: 0px; text-align: center;}
+.menu li {padding: 5px;}
+.slider {position:relative; color: lightyellow;}
+.slider img {width: 100%;}
+.text-photo {position: absolute; top: 30%;}
+.slider input {border: 1px solid lightyellow; background-color: transparent;}
+.purple-round {border-radius: 50%; background-color:#3f51b5; width:30px; height:30px; display:flex; align-content: center; }

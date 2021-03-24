@@ -1,0 +1,42 @@
+.popular-courses.main {
+    padding-top: 0px;
+}
+
+.popular-courses-box-main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.popular-courses-box-image-main {
+    width: calc((100% - 60px)/2);
+    margin-right: 30px;
+}
+
+.popular-courses-content {
+    width: calc((100% - 60px)/2);
+    margin-right: 30px;
+}
+
+.popular-courses-box-image-text-icons-main div {
+    padding: 5px;
+}
+
+.popular-courses-box-image-text-icons-main i {
+    padding: 10px 0px;
+}
+
+.popular-courses-box-image-text-icons-main {
+    display: flex;
+    align-items: center;
+}
+
+.popular-courses-box-price-img.main {
+    margin-left: auto;
+}
+
+.popular-course-price.main {
+    margin-left: 0px;
+}

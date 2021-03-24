@@ -1,0 +1,135 @@
+.popular-courses-title {
+    text-align: center;
+}
+
+.popular-courses-box {
+    text-decoration: none;
+    width: 100%;
+    display: none;
+    background-color: #f9f9f9;
+    color: rgb(117, 105, 91);
+    width: 100%;
+}
+
+.popular-courses-box.div {
+    width: 100%;
+    height: 100%;
+}
+
+.popular-courses-box:nth-child(5) {
+    display: block;
+}
+
+.popular-courses-box-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-courses-box-image-text {
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.popular-courses-box-image-text i {
+    padding-right: 5px;
+    z-index: 1;
+}
+
+.popular-courses-box-image-text div {
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.popular-courses-box-text {
+    padding: 30px;
+}
+
+.popular-courses-box-text p {
+    margin: 0px;
+}
+
+.popular-courses-box-price {
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #e2d7d7;
+}
+
+.popular-courses-box-price-img {
+    display: inline-block;
+    width: 50px;
+}
+
+.popular-courses-box-price-img img {
+    border-radius: 50%;
+}
+
+.popular-course-price {
+    background-color: #29ca8e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: auto;
+    padding: 7px;
+}
+
+.popular-course-price.free {
+    background-color: #3f51b5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.buttons a {
+    background-color: #f9f9f9;
+    ;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .popular-courses-box:nth-child(5) {
+        display: none;
+    }
+    .popular-courses-box:nth-child(3) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .popular-courses-box-text h2 {
+        height: 70px
+    }
+    .popular-courses-box:nth-child(2) {
+        display: block;
+    }
+    .popular-courses-box:nth-child(4) {
+        display: block;
+    }
+    .popular-courses-boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popular-courses-title {
+        width: 100%;
+    }
+    .popular-courses-box {
+        width: calc((100% - 60px)/3)
+    }
+}

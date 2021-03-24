@@ -1,0 +1,39 @@
+.trending-box-text h2 {
+    padding: 20px 0px;
+}
+
+.trending-box {
+    width: 100%;
+    padding: 70px 40px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #f9f9f9;
+}
+
+.trending-box-round {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.trending-box p {
+    margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .trending {
+        display: flex;
+        justify-content: space-between;
+    }
+    .trending-box {
+        width: calc((100% - 60px)/3);
+    }
+}

@@ -1,0 +1,4 @@
+:root {
+    --bordercolor: #ced4da;
+}
+.okvir{border:1px solid var(--bordercolor);}
