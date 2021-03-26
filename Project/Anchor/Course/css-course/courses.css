@@ -1,0 +1,347 @@
+
+.courses {
+    padding-top: 50px;
+}
+.course-card-PC,
+.course-card-tablet {
+    display: none;
+}
+.course-card-mobile {
+    display: flex;
+    flex-direction: column;
+}
+.courses-headings {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.courses-headings h1 {
+    margin-bottom: 0;
+}
+.courses-headings p {
+    font-size: 20px;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+.course-img img{
+    width: 100%;
+}
+#course-date {
+    position: relative;
+    bottom: 70px;
+    left: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100px;
+}
+#course-time {
+    position: relative;
+    bottom: 97px;
+    left: 110px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: 80px;
+}
+.info-course {
+    background-color: #f9f9f9;
+    position: relative;
+    bottom: 100px;
+    
+}
+.info-course h2,
+.info-course p {
+    position: relative;
+    left:10px;
+    padding-top: 10px;
+}
+.info-course p {
+    padding-bottom: 20px;
+}
+.course-img-brightness {
+    filter: brightness(85%);
+}
+
+/*BIGGER*/
+
+.course-card-bigger{
+    padding-bottom: 70px;
+}
+.info-course-bigger{
+    background-color: #f9f9f9;   
+}
+.course-img-bigger img{
+    width: 100%;
+    position: relative;
+}
+.info-course-bigger {
+    position: relative;
+    bottom: 25px;
+}
+.info-course-bigger h2 {
+    padding-top: 10px;
+    position: relative;
+    left: 10px;
+}
+.info-course-bigger p {
+    position: relative;
+    left: 10px;
+    margin-bottom: 5px;
+}
+#course-date-bigger {
+    position: relative;
+    bottom: 222px;
+    left: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100px;
+}
+#course-time-bigger {
+    position: relative;
+    bottom: 250px;
+    left: 110px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: 70px;
+}
+#course-pay-bigger{
+    position: relative;
+    top: -25px;
+}
+
+/*END BIGGER*/
+
+.course-pay {
+    background-color: #f9f9f9;
+    position: relative;
+    bottom: 112px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.course-pay img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   
+}
+.course-pay p {
+    position: relative;
+    right: 40px;
+}
+.course-pay button {
+    width: 65px;
+    height: 35px;
+    color: white;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    border: none;
+}
+.course-arrows {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    
+}
+.course-arrows div{
+    height: 35px;
+    width: 35px;
+    color: white;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left-arrow {
+    position: relative;
+    right: 5px;
+    
+}
+#right-arrow {
+    position: relative;
+    left: 5px;
+}
+#share {
+    display: none;
+}
+.more-courses {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .course-card-mobile {
+        display: none;
+    }
+    .course-card-tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-course-tablet {
+        background-color: #f9f9f9;
+        padding-left: 20px;
+        position: relative;
+        bottom: 92px;
+    }
+    #course-date,
+    #course-time,
+    #course-date-bigger,
+    #course-time-bigger {
+        font-size: 16px;
+        font-weight: 500;
+        width: 120px;
+    }
+    #course-date {
+        bottom: 62px;
+    }
+    #course-date-bigger {
+        position: absolute;
+        bottom: 130px;
+        left: 40px;
+    }
+    #course-time-bigger {
+        position: absolute;
+        bottom: 130px;
+        left: 170px;
+    }
+    .info-course h2 {
+        margin-bottom: 0;
+    }
+    .info-course p {
+        margin-top: 0;
+    }
+    #course-date {
+        left: 35px;
+    }
+    #course-time {
+        left: 170px;
+    }
+    .course-pay {
+        height: 70px;
+        justify-content: space-between;
+        bottom: 110px;
+    }
+    .course-pay img {
+        position: relative;
+        left: 30px;
+    }
+    .course-pay p {
+        right: 200px;
+    }
+    .course-pay button {
+        position: relative;
+        right: 30px;
+        width: 70px;
+        height: 30px;
+        color: white;
+        background-color: #29ca8e;
+        border-radius: 5px;
+    }
+    /*BIGGER*/
+    .info-course-bigger p{
+      padding-bottom: 15px;
+    }
+    #course-pay-bigger {
+        position: relative;
+        bottom: 20px;
+    }
+    /*END BIGGER*/
+}
+
+@media only screen and (min-width: 992px){
+    
+    .courses {
+        margin-top: 5px;
+    }
+    .course-card-tablet {
+        display: none;
+    }
+    .one-row-courses {
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-card {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 1/3);
+        padding-right: 15px;
+    }
+    #course-card-no-padding {
+        padding-right: 0;
+    }
+    #course-date,
+    #course-time {
+        width: 120px;
+    }
+    .info-course {
+        height: 145px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .info-course p {
+        width: 90%;
+    }
+    .course-pay p {
+        position: absolute;
+        left: 90px;
+    }
+    #blue-button {
+        background-color: #3f51b5;
+    }
+    .course-arrows {
+        padding-bottom: 50px;
+    }
+
+    .course-card-bigger {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .course-img-bigger {
+        width: 50%;
+    }
+    .course-img-bigger img {
+        width: 90%;
+    }
+    #course-pay-bigger {
+        display: none;
+    }
+    .info-course-bigger {
+        width: 50%;
+        position: relative;
+        top: 0px;
+        background-color: white;
+    }
+    #course-date-bigger {
+        color: black;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+    }
+    #course-time-bigger {
+        color: black;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0;
+    }
+    #share {
+        display: initial;
+        font-size: 30px;
+        margin:  0 20px 16px 0;
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+    }
+    .more-courses {
+        display: initial;
+        text-align: center;
+    }
+}
