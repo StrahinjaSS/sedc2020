@@ -1,0 +1,88 @@
+
+main .teachers {
+    width: 100%;
+    background-color: #f9f9f9 ;
+    
+
+}
+
+main .teachers-heading {
+
+    text-align: center;
+}
+
+main .teachers-heading:nth-child(2){
+    font-size: 12px;
+    font-style: normal;
+    color: gray;
+
+}
+main .teachers-info .teachers-rewiev {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+    
+}
+
+main .teachers-section .teachers-info .teachers-rewiev .teachers-img img {
+    width: 100%;
+    margin-bottom: 7px;
+}
+main .teachers-section .teachers-info .teachers-rewiev .teachers-name {
+    background-color:white;
+    height: 120px;
+    text-align: start;
+    margin-bottom: 7px;
+    padding: 20px 20px;
+}
+main .teachers-section .teachers-info .teachers-rewiev .teachers-icon {
+    
+    height: 60px;
+    
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+main .teachers-section .teachers-info .teachers-rewiev .teachers-icon .icon {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    
+    main .teachers {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    main .teachers .teachers-section{
+        display: flex;
+        flex-direction: row;
+        width:900px;
+        margin: auto;
+        
+
+    }
+
+    main .teachers .teachers-section .teachers-info {
+        width: 25%;
+        padding-left: 5px;
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+}

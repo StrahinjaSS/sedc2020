@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;      
+}
+
+footer .footer-div{
+    padding-top: 50px;             
+}
+
+footer .footer-div .heading3 {
+    font-size: larger;
+    color: white;
+}
+
+footer .footer-div .heading4 {    
+    color:gray;
+}
+footer .headquarter {
+    display: flex;
+}
+footer .headquarter i{
+    width: 30px;
+    height: 30px;   
+    padding-left: 10px;
+    padding-right:10px;
+    font-size: 20px;
+    color: #29ca8e;
+    background-color: black;
+}
+footer .contact-links .footer-div .link {    
+    color:gray;
+    text-decoration: none;
+    padding-right: 35px ;
+}
+
+footer .newsletter .footer-div .button {
+    border-radius: 50px;
+    border: 2px solid white;
+    background: black;  
+    color: white;    
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    width: 50%; 
+    line-height: 30px;
+    
+
+}
+
+footer .footer-div .inputEmail {    
+    background: black;  
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    width: 100%;    
+}
+
+
+@media screen and (min-width: 768px) {
+
+    footer .footer-content{
+        width: 700px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 50px;
+    }
+    footer .footer-content>div{
+        width:calc((100% - 10px)/2);
+    }
+    footer .footer-content:last-child{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+   
+ 
+    
+    footer .footer-content{
+        width: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 50px;
+
+    }
+    footer .footer-content .contact-links .footer-div {
+        padding-top: 0;
+    }
+    footer .footer-content .contact-links {
+        padding-top: 50px;
+    }
+    .footer-div h3,  .footer-div h4 {
+       margin: 0;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+
+    footer .footer-content>div {
+        width: calc(1000% / 3);
+    }
+
+    footer .footer-content .newsletter .footer-div input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    footer .footer-content .newsletter .footer-div h3{
+        padding-bottom: 50px;
+    }
+
+}
+
+
+
+

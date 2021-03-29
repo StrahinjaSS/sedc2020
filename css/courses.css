@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    width: 100%;
+}
+.logo-menu, .slider-text, .trio, .signup-courses, .teachers-section, 
+.p-courses-options, .student-reviews-members, .contact-form,
+.footer-content {
+ 
+   margin-left: 7px;
+   margin-right: 7px;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+main .p-courses{
+    position: relative;
+}
+
+main .p-courses .p-courses-heading {
+    text-align: center;
+
+}
+
+main .p-courses .p-courses-heading  {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+}
+
+main .p-courses .p-courses-options .p-courses-info {
+    display: none;
+}
+main .p-courses .p-courses-options .p-courses-info:nth-child(1) {
+    display:block;
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-img {
+    position: relative;
+    width: calc(100vw-10px);
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-img .p-courses-img-img .p-courses-img-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-style: border;
+    display: inline-block;
+    font-size: 12px;
+    font-style: bold;
+
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-heading {
+    background-color:#f9f9f9 ;
+    border: grey;
+    border-top: 1px;
+    margin:0;
+    text-align: start;
+    padding-left: 20PX;
+   
+    
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-heading >* {
+    padding-top:10px;
+}
+
+main .p-courses .p-courses-options .p-courses-info .p-courses-data {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#f9f9f9 ;
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-teacher{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+    align-items: center;
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-teacher .p-courses-teacher-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+main .p-courses .p-courses-options .p-courses-info  .p-courses-data .p-courses-teacher .p-courses-teacher-img img {
+    width: 100%;
+    height: 100%;
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-teacher .p-courses-teacher-name {
+    padding-left: 15px ;
+
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-price {
+   line-height:100px;
+   vertical-align: middle;
+   padding-right: 15px;
+  
+}
+main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-price input {
+    background: #3f51b5;
+    border: none;
+    color: white;
+    padding: 6px;
+} 
+
+main .p-courses .arrow {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color:#e2e1e1;
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .p-courses-options {
+       width: 900px;
+       margin: auto;
+    }
+    main .p-courses .p-courses-heading {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+
+
+    main .p-courses .p-courses-options  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 900px;
+        margin: auto;
+
+    }
+ 
+   
+    main .p-courses .p-courses-options .p-courses-info .p-courses-heading {
+        text-align: start;
+        padding-top: 30px;
+    }
+  
+    main .p-courses .p-courses-options .p-courses-info {
+        width: calc((100% - 30px)/3);
+        display:block;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    main .p-courses .p-courses-options .p-courses-info:nth-child(1) {
+        padding-left: 0px;
+    
+    }
+    main .p-courses .p-courses-options .p-courses-info .p-courses-data {
+        margin-top: 2px;
+    
+    }
+    main .p-courses .p-courses-options .p-courses-info .p-courses-data .p-courses-price .usd{
+        background-color:#29ca8e;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
