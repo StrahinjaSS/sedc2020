@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: gray;
+        
+}
+h1,h2,h3,h4{
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+}
+
+/* @media screen and (min-width: 992px){
+    header, .welcome .welcome-content, .articles .articles-menu, .introduction, .teachers, .courses, .students, .contact .contact-us, .footer-container{
+        width: 900px;
+        padding: 0px;
+        padding-top: 50px;
+        padding-left: calc((100% - 900px) / 2);
+        padding-right: calc((100% - 900px) / 2);
+    }
+} */

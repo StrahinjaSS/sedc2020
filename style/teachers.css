@@ -1,0 +1,94 @@
+.teachers{
+    background-color:#f9f9f9; 
+    padding: 50px 10px;
+}
+/* .teachers .teachers-menu{
+    
+    
+} */
+
+.teachers .teachers-menu .teachers-heading{
+    text-align: center;
+}
+.teachers .teachers-blog{
+    background-color: inherit;
+    
+}
+.teachers .teachers-blog .teachers-blog-container:nth-child(2){
+    display: none;
+}
+.teachers .teachers-blog .teachers-blog-container:nth-child(3){
+    display: none;
+}
+.teachers .teachers-blog .teachers-blog-container:nth-child(4){
+    display: none;
+}
+
+
+.teachers .teachers-menu .teachers-blog .teachers-blog-container{
+    padding-top: 50px;
+}
+
+
+.teachers .teachers-menu .teachers-blog  .teachers-blog-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.teachers .teachers-menu .teachers-blog  .teachers-blog-personal{
+    
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.teachers .teachers-menu .teachers-blog  .teachers-blog-personal h3{
+    color: rgb(109, 106, 106);
+}
+.teachers .teachers-blog  .teachers-blog-networks{
+    
+    padding: 10px 30px;
+    margin-top: 1px;
+    background-color: white;
+    
+}
+.teachers .teachers-blog  .teachers-blog-networks i{
+    margin-right: 20px;
+    color: black;
+}
+/* .teachers-blog-mark, .teachers-blog-catherine, .teachers-blog-jeesie, .teachers-blog-andrew{
+    
+} */
+@media screen and (min-width: 768px){
+    .teachers .teachers-menu .teachers-blog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .teachers .teachers-menu .teachers-blog .teachers-blog-container{
+        width: calc((100% / 2) - 10px);
+    }
+    .teachers .teachers-blog .teachers-blog-container:nth-child(2){
+        display: block;
+    }
+    .teachers .teachers-blog .teachers-blog-container:nth-child(3){
+        display: block;
+    }
+    .teachers .teachers-blog .teachers-blog-container:nth-child(4){
+        display: block;
+    }
+}
+@media screen and (min-width: 992px){
+    .teachers{
+        padding: 50px 0px;
+    }
+    .teachers .teachers-menu{
+        width: 900px;
+        margin: auto;   
+    }
+    .teachers .teachers-menu .teachers-blog .teachers-blog-container{
+        width: calc((100% / 4) - 10px);
+    }
+    
+   
+}

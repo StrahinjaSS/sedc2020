@@ -1,0 +1,218 @@
+.courses{   
+    padding: 50px 10px;   
+}
+.courses .courses-menu .courses-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.courses .course-page {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: inherit;
+} 
+
+.courses .courses-menu .courses-blog .courses-container{
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    position: relative;
+}
+.courses .courses-menu .courses-blog .courses-container:nth-child(2){
+    display: none;
+}
+.courses .courses-menu .courses-blog .courses-container:nth-child(3){
+    display: none;
+}
+.courses .courses-menu .courses-blog .courses-container .courses-image{
+    position: relative;
+
+}
+.courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-photo{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-photo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-content {
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    left: 30px;
+}
+.courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-content i{
+    color: rgb(246, 241, 241);
+    font-size: 20px;
+    margin-right: 20px;
+}
+.courses .courses-menu .courses-blog .courses-about{
+    padding: 25px 30px;
+    
+}
+.courses .courses-menu .courses-blog .price{
+    border-top: 1px solid rgb(216, 212, 212);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px;
+}
+.courses .courses-menu .courses-blog .price .price-content{
+    display: flex;
+    align-items: center; 
+}
+.courses .courses-menu .courses-blog .price .price-content .price-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+}
+.courses .courses-menu .courses-blog .price .price-content .price-picture img{
+    width: 100%;
+}
+
+.courses .courses-menu .courses-blog .price  .free a{
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    border: none;  
+    background-color: #3f51b5;
+    border-radius: 5px;
+    border: none; 
+    outline: none;
+}
+/* .courses .courses-menu .courses-blog .price  button{
+    
+   
+    position: relative;
+}
+.courses .courses-menu .courses-blog .price  button a{
+    
+    padding: 10px 15px;
+    color: white;
+    background-color: #29ca8e;
+    border: none; 
+    border-radius: 5px;
+    border: none; 
+    outline: none;
+
+} */
+.courses .courses-menu .courses-blog .price .course-page-button{
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #29ca8e;
+    border: none; 
+    border-radius: 5px;
+    border: none; 
+    outline: none;
+}
+.courses .courses-menu .courses-blog .price .free{
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #294fca;
+    border: none; 
+    border-radius: 5px;
+    border: none; 
+    outline: none;
+}
+
+.courses .courses-menu .courses-blog .courses-container .courses-image .opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-color: black;
+} 
+.courses .scroll{
+    padding: 50px 0px;
+    text-align: center;
+}
+.courses .scroll .scroll-left{
+    background-color: lightgray;
+    padding:  10px 15px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.courses .scroll .scroll-left i{
+    color: white;
+    font-size: 18px;
+}
+.courses .scroll .scroll-right{
+    background-color: lightgray;
+    padding:  10px 15px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.courses .scroll .scroll-right i{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 992px){
+    .courses{   
+        padding: 50px 0px;
+          
+    }
+    .courses .courses-menu{
+        width: 900px;
+        margin: auto;
+    }
+    .courses .courses-menu .courses-blog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .courses .courses-menu .courses-container{
+        width: calc((100% / 3) - 10px);
+        margin-bottom: 50px;
+    }
+    .courses .courses-menu .courses-blog .courses-container:nth-child(2){
+        display: block;
+    }
+    .courses .courses-menu .courses-blog .courses-container:nth-child(3){
+        display: block;
+    }
+    .courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-photo img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-content {
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+        left: 30px;
+        color: white;
+    }
+    .courses .courses-menu .courses-blog .courses-container .courses-image .courses-image-content i{
+        color: white;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .courses .price{
+        padding: 25px 20px;
+        
+    }
+    .courses .courses-menu .courses-blog .courses-container .courses-about{
+        padding: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+}

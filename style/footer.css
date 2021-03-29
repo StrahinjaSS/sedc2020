@@ -1,0 +1,109 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.787);
+    padding: 50px 10px;
+}
+footer h1{
+    color: white;
+}
+
+footer .headquarter .headquarter-icons{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+footer .headquarter .headquarter-icons i{
+    color: #29ca8e;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+
+footer .contactinfo{
+    padding: 50px 0px;
+}
+footer .contactinfo .contactinfo-nav{
+    padding-top: 10px;
+}
+footer .contactinfo .contactinfo-nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;   
+    flex-wrap: wrap;
+}
+footer .contactinfo .contactinfo-nav ul li{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+footer .contactinfo .contactinfo-nav ul li a{
+    text-decoration: none;
+    display: block;
+}
+
+footer .newsletter form{
+    width: 100%;
+}
+footer .newsletter form input{
+    width: 100%;
+    padding: 20px;
+    background-color: inherit;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+footer .newsletter form button{
+    width: 50%;
+    padding: 20px;
+    background-color: inherit;
+    border: 2px white solid;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+footer p{
+    padding: 10px 0px;
+}
+@media screen and (min-width: 768px){
+    footer .footer-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer .footer-container .contactinfo{
+        padding: 0px;
+    }
+    footer .headquarter, footer .contactinfo{
+        width: 50%;
+    }
+    footer .footer-container .newsletter{
+        width: 100%;
+        padding: 50px 0px;
+    }
+}
+ @media screen and (min-width: 996px){
+    footer{
+        padding: 50px 0px;
+    }
+    footer .footer-container{
+        width: 900px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    footer .footer-container .headquarter, footer .footer-container .contactinfo, footer .footer-container .newsletter{
+        width: calc((900px / 3) - 30px)
+    }
+    footer .footer-container .newsletter{
+        padding: 0px;
+    }
+    footer .newsletter form button{
+        width: 50%;
+        padding: 10px 20px;
+        background-color: inherit;
+        border: 2px white solid;
+        color: white;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+ }

@@ -1,0 +1,41 @@
+
+.course{
+    padding: 50px 10px;
+}
+.course .course-content .course-content-text{
+    display: flex; 
+    flex-direction: column;
+}
+.course .course-content .course-content-text p{
+    margin-top: 20px; 
+    line-height: 2;
+}
+.course .course-content .course-icons{
+    margin-top: 20px;
+}
+.course .course-content .course-icons i{
+    color: black;
+    font-size: large;
+}
+.course .course-content .course-icons .last{
+    float: right;
+}
+@media screen and (min-width: 900px){
+    .course{
+        width: 900px; 
+        margin: auto; 
+        display: flex; 
+        justify-content: space-evenly;
+        padding: 50px 0px;
+    }
+    .course .course-picture{
+        width: calc((900px / 2) - 20px);
+    }
+    .course .course-picture img{
+        width: 100%;
+    }
+    .course .course-content{
+        width: calc((900px / 2) - 20px); 
+        padding: 10px;
+    }
+}

@@ -1,0 +1,103 @@
+.introduction{
+    padding: 50px 10px;
+}
+.introduction .introduction-menu .introduction-jurney .introduction-jurney-blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .introduction-menu .introduction-jurney .introduction-jurney-blog .introduction-jurney-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #29ca8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.introduction .introduction-menu .introduction-jurney .introduction-jurney-blog .introduction-jurney-icon i{
+    font-size: 24px;
+    color: white;
+}
+.introduction .introduction-menu .introduction-jurney .introduction-jurney-blog .introduction-jurney-text{
+    width: calc(100% - 60px);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.introduction .introduction-menu .introduction-form{
+    width: 90vw;
+    height: 90vw;
+    margin: auto;
+    background-color: #252020;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.introduction .introduction-menu .introduction-form form {
+    width: 70%;
+    text-align: center;
+}
+.introduction .introduction-menu .introduction-form form h1{
+    color: white;
+    width: 100%;
+}
+
+
+.introduction .introduction-menu .introduction-form form input{
+    background: inherit;
+    border-style: none;
+    outline: none;
+    border-bottom: grey solid 2px;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+.introduction .introduction-menu .introduction-form .button{
+    padding: 10px;
+}
+.introduction .introduction-menu .introduction-form .button button{
+    margin: auto;
+    color: black;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    display: block;
+
+}
+@media screen and (min-width: 600px){
+    .introduction .introduction-menu .introduction-form{
+        width: 400px;
+        height: 400px;
+        background-color: #252020;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .introduction{
+        padding: 50px 0px;
+    }
+    .introduction .introduction-menu{
+        padding-left: calc((100% - 900px) / 2);
+        padding-right: calc((100% - 900px) / 2);
+        display: flex;
+        justify-content: space-between;
+    }
+    .introduction .introduction-menu .introduction-jurney{
+        width: 450px;
+    }
+    
+}

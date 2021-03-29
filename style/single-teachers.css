@@ -1,0 +1,46 @@
+.teacher-data{
+    background-color: rgb(240, 234, 234); 
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.teacher-data .teacher-data-picture{
+    width: calc((100% / 3) - 10px);
+    height: 500px;
+}
+.teacher-data .teacher-data-picture img{
+    width: 100%;
+    height: auto;
+}
+.teacher-data .teacher-data-personal{
+    width: calc((100% / 3) - 10px);
+}
+.teacher-data .teacher-data-navcourse{
+    width: calc((100% / 3) - 10px);
+}
+.teacher-data .teacher-data-navcourse ul{
+    list-style: none;
+    padding: 0;
+}
+.teacher-data .teacher-data-navcourse ul li{
+    padding: 10px;
+}
+.teacher-data .teacher-data-navcourse ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px){
+    .teacher-data{
+        background-color: rgb(240, 234, 234); 
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+    .teacher-data .teacher-data-picture{
+        height: 200px;
+    }
+    .teacher-data .teacher-data-picture img{
+        width: auto;
+        height: 100%;
+    }
+}
