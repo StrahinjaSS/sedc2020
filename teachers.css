@@ -1,0 +1,78 @@
+.teachers{
+    background-color: #f9f9f9;
+}
+/*imam malo veci razmak izmedju h3 i span nego sto je na slici, padding je 0, margin je 0, ne znam!*/
+.teacher-bios{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+.teacher-bio{
+    background-color: white;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+.teacher-bio > .teacher-intro{
+    padding: 20px 30px;
+}
+.teacher-bio > .teacher-intro > h3{
+    margin: 0;
+    line-height: normal ;
+}
+.teacher-bio > .teacher-intro > span{
+    font-size: 14px;
+    margin: 0;
+}
+.teacher-bio > img{
+    width: 100%;
+    /*height: auto;*/
+}
+.teacher-bio > .teacher-socials{
+    border-top: 2px solid #f0f0f0;
+    padding: 4px 20px 0 20px;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    display: flex;
+    margin: 0;
+}
+.teacher-bio > .teacher-socials > li{
+    /*display: inline-block;*/
+    list-style: none;
+    /*margin-bottom: 5px;*/
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: large;
+}
+.teacher-bio > .teacher-socials > li:hover {
+    background: #29ca8e;
+    color: #ffffff;
+}
+@media (min-width: 768px){
+    .teacher-bios
+    {
+        /*width: calc(50%-60px);*/
+        width: 100%;
+        /*flex-direction: column;*/
+    }
+    .teacher-bio{
+        width: calc(50% - 20px);
+        margin: 10px 10px;
+    }
+}
+@media (min-width: 992px){
+    .teacher-bios
+    {
+        /*width: calc(50%-60px);*/
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .teacher-bio{
+        width: calc(25% - 20px);
+        margin: 0px 10px;
+    }
+}

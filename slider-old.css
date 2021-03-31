@@ -1,0 +1,11 @@
+.slider-main{
+    background-color: #a9a9a999;
+    background-blend-mode: multiply;
+    background-image: url("images/slider-image1.jpg");
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    padding: 180px 15px;
+    
+}

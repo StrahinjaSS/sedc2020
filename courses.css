@@ -1,0 +1,70 @@
+.course{
+    background-color: #f9f9f9;
+    margin-bottom: 5vh;
+}
+.course-top{
+    position: relative;
+}
+.course-top > img{
+    width: 100%;
+    /*height: auto;*/
+}
+.course-top > .course-date{
+    width: 100%;
+    position: absolute;
+    bottom: 6px;
+    padding: 20px 25px;
+    color: white;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    /* ne mogu da namestim lepo ovaj datum da ne odguram ceo content iz sledeceg elementa!*/
+}
+/*sledeca 3 su kopirana iz teachers.css, ali p nije span*/
+
+.course-mid{
+    padding: 20px 30px;
+}
+.course-mid > h3{
+    margin: 0;
+    line-height: normal ;
+}
+.course-mid > p{
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+}
+.course-bot{
+    padding: 15px 25px;
+    border-top: 1px solid #f0f0f0;
+}
+.course-bot > div{
+    display: flex;
+}
+.course-bot > div > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+}
+.course-bot > .course-price{
+    background: #29ca8e;
+    color: #ffffff;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    padding: 5px 10px;
+}
+.course-bot > .free{
+    background: #3f51b5;
+}
+@media (min-width: 992px){
+    .all-courses-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .course{
+        width: calc(100% / 3 - 15px);
+        margin: 5px;
+    }
+
+}
