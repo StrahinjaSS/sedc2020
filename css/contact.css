@@ -1,0 +1,71 @@
+.contact-form{
+    background-color: #3f51b5;
+    color: white;
+    padding-top: 20px;
+    /*height: 775px; ovo je prvo bilo resenje ali kad sam dodao sve, onda je bilo ok bez
+*/
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: white;
+}
+.contact-form > .heading-styled{
+    text-align: left;
+}
+.contact-form > .heading-styled > h3{
+    color:white;
+}
+.contact-form > input, textarea{
+    font-family: 'Nunito';
+    background-color: white;
+    padding: 1vh;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    height: 50px;
+    border-color: transparent;
+}
+.contact-form > textarea{
+    height: 200px;
+    width: 100%;
+    /*TEXTAREA JE VELIKI PROBLEM, POGOTOVO KAD JE VELIKI EKRAN! NE MOGU DA GA RESIZEUJEM JER JE U POZADINI!
+    KAKO DA NAPRAVIM DA ODGURNE SVE ALI I POVECA VELICINU CELOG PARENT ELEMENTA, BEZ DA OSTECUJE SLIKU ISPOD
+    ILI DA PRAVI PROBLEME???
+    SHVATAM DA JE FIKSNA VELICINA CELOG PLAVOG KONTEJNERA PROBLEM, ALI TO JE BILO RESENJE NA CURENJE
+    SLIKE I OSTALIH ELEMENATA*/
+}
+#contactButton{
+    background-color: white;
+    color: #777;
+    margin-bottom: 5vh;
+    font-family: 'Nunito';
+}
+#contactButton:active{
+    background-color: unset;/*transparent bi bilo isto?*/
+    color: white;
+}   
+.contact-form > img{
+    max-width: 100%;
+    overflow-y: hidden;
+}
+@media (min-width: 992px){
+    .contact-form > input, textarea{
+        width: 50%;
+    }
+    .contact-form > textarea{
+        width: 50%;
+    }
+    #contactButton{
+        width: 20%;
+    }
+    .contact-form > img{
+        /*jedan od glupljih hakova bez pravljenja kontejnera*/
+        max-width: 50%;
+        max-height: 50%;
+        /* float: right; */
+        position: absolute;
+        left: 50%;
+        padding: 1%;
+    }
+
+}

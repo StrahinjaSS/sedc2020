@@ -1,0 +1,63 @@
+/*OVDE POCINJE PRICA O CSS SLAJDERU BEZ BACKGROUND-IMAGE!*/
+.slider{
+    width: 100vw;
+    height: 610px;
+    display: flex;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;/*??? isto je */
+    
+}
+.slides > div {
+    /* CURRENT way. */
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 600px;
+
+    background: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
+}
+.slider-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /*kopirano sa background image nacina prikaza slike sa tekstom*/
+    mix-blend-mode: multiply;
+    background-color: rgba(169, 169, 169, 0.8);
+    /*ali sam onda dodao i filter jer se slova ne vide lepo*/
+    filter: brightness(0.8);
+}
+.slider-text{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    color:white;
+    width: 50%;
+}
+@media (min-width: 992px){
+    .slider-text > h1{
+        font-size: 3em;
+    }
+}
+/*u slideru imamo problem da imam 3 ID-a za button, posto je 3 razlicita slidea!!!*/
+#sliderBtn:hover{
+    background-color: white;
+    color: black;
+}
+#sliderBtn:active{
+    background-color: grey;
+}

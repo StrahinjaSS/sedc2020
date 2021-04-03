@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Muli;
+    src: url(../muli/Muli.ttf);
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../Nunito/Nunito-Regular.ttf)
+}
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;/*ne radi?!*/
+    border-top: 6px solid #29ca8e;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Muli', sans-serif;
+}
+main{
+    /*padding: 15px;/*sve posle slidera ima 15px marginu*/
+    /*ALI NIJE MARGINA JER SIVA POZADINA NECE DA POSTOJI U MARGINI!!! TREBACHILDRENI DA IMAJU PADDING*/
+}
+.offers-blue,
+.signup,
+.teachers,
+.popular-courses,
+.student-reviews,
+.contact-form,
+.footer{
+    padding: 30px 15px;
+}
+input{
+    outline: none;
+}
+textarea{
+    outline: none;
+}
+header > p{
+    font-size: 18px;
+    font-weight: 600;
+   /* padding: 5px 20px;*/
+    padding: 20px 0 0 20px;
+    margin: 0;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+nav > ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+nav > ul > li{
+    height: 39px;
+    list-style-type: none;
+    padding: 10px; /*ovako sam centrirao tekst jer nisam umeo drugacije!*/
+    
+    transition: 0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+nav > ul > li:hover{
+    background-color: #29ca8e;
+    color: white
+}
+nav > ul > li > a{
+    text-decoration: none;
+}
+nav > ul > li > a:visited{
+    color: unset;
+}
+.btn-styled{
+    color: #ffffff;
+    font-size: 14px;
+    padding: 14px 20px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid white;
+    outline: none;/*ovo se pojavi kad kliknes na input, ali sad ga obirsemo da ga nema*/
+    font-family: 'Nunito';
+}
+.heading-styled{
+    text-align: center;
+    margin: 0;
+}
+.heading-styled > h2 {
+    margin: 0;
+}
+.heading-styled > h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: medium;
+    color: #777;
+    /*padding-bottom: 40px;*/
+    padding-bottom: 5vh;
+}
+
+@media (min-width: 768px){
+    header{
+        height: 70px;
+    }
+    header > p{
+        display: inline;
+        height: 70px;
+        float: left;
+    }
+    nav{
+        width: 70%;
+        height: 70px;
+    }
+    nav > ul{
+        flex-direction: row;
+        height: 100%;
+    }
+    nav > ul > li{
+        height: 100%;
+        line-height: 45px;
+    }
+    nav > ul > li > a{
+        /*line-height: -40px;*/
+
+    }
+}
+@media (min-width: 992px){
+    .offers-blue,
+    .signup,
+    .teachers,
+    .popular-courses,
+    .student-reviews,
+    .contact-form,
+    .footer{
+        padding: 25px calc((100% - 900px) / 2);
+    }
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: transparent;
+  }
