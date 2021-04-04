@@ -16,8 +16,8 @@
     height: 100%;
 }
 
-.popular-courses-box:nth-child(5) {
-    display: block;
+.popular-courses-box {
+    display: none;
 }
 
 .popular-courses-box-image {
@@ -118,10 +118,10 @@
     }
     .popular-courses-box:nth-child(2) {
         display: block;
-    }
+    } 
     .popular-courses-box:nth-child(4) {
         display: block;
-    }
+    } 
     .popular-courses-boxes {
         display: flex;
         flex-wrap: wrap;

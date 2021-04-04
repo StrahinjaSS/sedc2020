@@ -1,7 +1,7 @@
 
 .student-review-box {display:none; background-color: white; padding: 40px 30px; }
 .student-review-box p{margin-top:20px}
-.student-review-box:nth-child(3) {display:block;}
+.student-review-box:nth-child(2) {display:block;}
 .student-reviews-box-content {display: flex; align-items: center;}
 .student-reviews-box-content p {margin: 0px; text-align: justify;}
 .student-reviews-box-content-image {border-radius: 50%; width: 50px; height: 50px; margin-right:10px;}
@@ -10,10 +10,10 @@
 .student-reviews-content-stars {color:#3f51b5; padding-bottom: 10px;}
 .student-reviews-slider {text-align: center; font-size: 10px; padding-top:20px;}
 .student-reviews-slider a {margin:10px;}
-.student-reviews-slider i {color: #726f6f;}
-#student-reviews-slider-mark {color:rgb(48, 43, 43);}
 
-@media screen and (min-width: 768px){
+.active {color:rgb(48, 43, 43);}
+
+/* @media screen and (min-width: 768px){
     .student-review-box:nth-child(2) {display:none;}
     .student-review-box:nth-child(3) {display:block;}
 }
@@ -23,4 +23,4 @@
     .student-review-box{display:block; width: calc((100% - 60px)/3);}
     .student-reviews-slider {width:100%;}
 
-}
+} */
