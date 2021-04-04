@@ -1,4 +1,4 @@
-const baseUrl = 'https://60642520f091970017785074.mockapi.io/';
+// const baseUrl = 'https://60642520f091970017785074.mockapi.io/';
 const getReviews = () => {
     let request = new Request(baseUrl + 'reviews', ({
         method: 'GET'
@@ -14,3 +14,6 @@ const getReviews = () => {
         console.log(er);
     })
 }
+getReviews()
+
+// export { getReviews };

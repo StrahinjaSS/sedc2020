@@ -71,3 +71,23 @@
     }
 
 }
+.welcome .sliderBTN{
+    display: flex;
+    justify-content: center;
+}
+
+.welcome .sliderBTN .sliderBTNS{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    background-color: darkgray;
+    border-radius: 50%;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+.welcome .sliderBTN .sliderBTNS.active{
+    background-color: #3f51b5;
+}
+
