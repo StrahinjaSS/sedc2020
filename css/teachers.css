@@ -59,11 +59,11 @@
 }
 
 .social-links-teachers i {
-    padding: 0 15px;
-    font-size: 24px;
+    padding: 0 10px;
+    font-size: 22px;
 }
 .social-links-teachers i:first-child {
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .teacher-buttons, .popular-courses-buttons {

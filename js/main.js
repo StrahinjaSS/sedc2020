@@ -14,21 +14,27 @@ async function getData() {
     let coursesData = await getEndpoint(courses);
 
     teacherData.forEach(function (teacher) {
+        
+        let socialLinks = "";
+        for (let link in teacher.social) {
+            console.log(`${link} facebook`);
+            socialLinks += `<a href="${teacher.social[link]}"><i class="fab fa-${link}"></i></a>`;
+        }
+        let teacherLink = teacher.name.replace(" ", "-");
+
         $('.teacher-cards-container').append(`
         <div class="teacher-card">
-        <a class="teacher-image-link" href="pages/teacher-page.html"><img src="${teacher.image}" alt="Teacher image"></a>
+        <a class="teacher-image-link" href="pages/${teacherLink}.html"><img src="${teacher.image}" alt="Teacher image"></a>
     
         <div class="teacher-links">
     
             <div class="profile-link">
-                <a href="pages/teacher-page.html">${teacher.name}</a>
+                <a href="pages/${teacherLink}.html">${teacher.name}</a>
                 <p>${teacher.quote}</p>
             </div>
     
             <div class="social-links-teachers">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram"></i>
+                ${socialLinks}
             </div>
         </div>
     </div>
@@ -42,28 +48,28 @@ async function getData() {
     // });
 
     reviewsData.forEach((review) => {
+        let rating = "";
+        for (let i=0; i < review.rating; i++){
+            rating += '<i class="fas fa-star"></i>'
+        }
+
         $('.student-reviews-card-container').append(`
         <div class="student-reviews-card">
+            <div class="student-card">
+                <div class="student-info">
+                    <img src="${review.image}" alt=""     class="student-image">
+                    <div class="student-info-text">
+                        <p class="student-name">${review.name}</p>
+                        <p class="student-title">${review.position}</p>
+                    </div>
+                </div>
 
-        <div class="student-card">
-            <div class="student-info">
-                <img src="images/tst-image1.jpg" alt=""     class="student-image">
-                <div class="student-info-text">
-                    <p class="student-name">Jackson</p>
-                    <p class="student-title">Shopify Developer</p>
+                <p class="student-testimonial">${review.review_text}</p>
+                <div class="rating">
+                    ${rating}
+
                 </div>
             </div>
-
-            <p class="student-testimonial">You really do help   young creative minds to get quality education and     professional job seach assistance. I'd recommend  it    to everyone!</p>
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-
-            </div>
-        </div>
         </div>
         `)
     });
