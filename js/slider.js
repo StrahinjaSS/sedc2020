@@ -9,7 +9,8 @@ const getSlider = () => {
     })
     .then(arr =>{
         pictures(arr);
-        sliderss(arr);
+        
+        
  })
     .catch(err =>{
         console.log(err)
@@ -30,8 +31,10 @@ let pictures = arra => {
         let sliderBtn = document.querySelector('.welcome .sliderBTN');
         sliderBtn.appendChild(btn);
     });
+    sliderss();
+    
 }
-function sliderss (arr){
+function sliderss (){
     let slideIndex = 0;
     let sliderButtons = document.querySelectorAll('.sliderBTNS');
     let carousel = function () {
@@ -44,11 +47,13 @@ function sliderss (arr){
       x[slideIndex-1].style.display = "block";
       
       for(let i = 0; i < sliderButtons.length; i++){
-          sliderButtons[i].className = sliderButtons[i].className.replace(' active', '');
+        sliderButtons[i].className = sliderButtons[i].className.replace(' active', '');
+
       }
+      
       sliderButtons[slideIndex-1].className += ' active';
-      setTimeout(carousel, 2000);
+      setTimeout(carousel, 2500);
     }
-    carousel(arr);
+    carousel();
 }
 

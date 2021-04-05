@@ -14,6 +14,14 @@
     height: 100%;
     display: block;
 }
+.welcome .welcome-image .sliderPhotos{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 .welcome .welcome-content{
     position: absolute;
     top: 150px;
