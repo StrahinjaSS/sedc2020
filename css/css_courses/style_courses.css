@@ -1,5 +1,3 @@
-
-
 .courses {
     display: flex;
     flex-direction: column;
@@ -17,9 +15,7 @@
 .courses h3 {
     padding-top: 20px;
 }
-.courses-item-tablet {
-    padding: 10px;
-}
+
 .courses-img {
     position: relative;
     width: 100%;
@@ -87,26 +83,21 @@
 .course-teacher-name {
     margin-left: 0;
 }
-.course-teacher-button-free {
+.course-teacher-button {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 30%;
     padding-right: 15px;
 }
-.course-teacher-button-free button {
+.free {
     background-color: #3f51b5;
     color: white;
     padding: 7px;
     outline: none;
     border: none;
 }
-.course-teacher-button-pay {
-    display: flex;
-    justify-content: flex-end;
-    width: 30%;
-    padding-right: 15px;
-}
-.course-teacher-button-pay button {
+
+.pay {
     background-color: #29ca8e;
     color: white;
     border: none;
@@ -135,49 +126,52 @@
     color: white;
     background-color: lightgrey;
 }
-.courses-item-tablet {
-    display: none;
+#left:hover {
+    background-color: rgb(68, 63, 100);
 }
-.courses-item-desctop {
-    display: none;
+#right:hover {
+    background-color: rgb(68, 63, 100);
 }
+
 
 @media screen and (min-width: 768px) {
     
-    .courses-item-mobile {
-        display: none;
-    }
-    .courses-item-tablet {
+    .courses-item {
         display: block;
     }
 }
 
 @media screen and (min-width: 992px) {
     
-    .courses-item-mobile {
-        display: none;
-    }
-    .courses-item-tablet {
-        display: none;
-    }
-    .courses-item-desctop {
+    .courses-item {
         display: block;
     }
     .courses h1, p {
         width: 100%;
     }
     .courses {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
-    
-    .courses-item-desctop {
-        width: 50%;
-        width: calc(100% / 3);
-        align-content: space-between;
+    .courses-item {
+        width: 306px;
+        height: 385px;
         padding: 10px;
     }
+    .carousel {
+        width: 900px;
+        height: 385px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .carousel-items {
+        display: flex;
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+    }
+    
     .courses-date-time {
         font-size: 12px;
         bottom: 5px;

@@ -33,28 +33,13 @@
             </div>
         </header>
         <main>
-            <div class="slider">
+            <div class="slider" id="slider">
                 <div class="overlay">
                     <div class="slider-text">
-                        <h2>Start your journey with our practical courses</h2>
-                        <span>Our online courses are built in partnership with technology leaders and are designed to meet industry demands.</span>
+                        <h1 class="slider-header"></h2>
+                        <span class="slider-descr"></span>
                         <div class="btn">
-                            <button>Take a course</button>
-                        </div>
-                    </div>
-                    <div class="slider-text-tablet">
-                        <h1>Distance Learning Education Center</h1>
-                        <h1>Efficient Learning Methods</h1>
-                        <span>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit templatemo page.</span>
-                        <div class="btn">
-                            <button>Let's chat</button>
-                        </div>
-                    </div>
-                    <div class="slider-text-desctop">
-                        <h1>Efficient Learning Methods</h1>
-                        <span>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit templatemo page.</span>
-                        <div class="btn">
-                            <button>Let's chat</button>
+                            <button class="slider-btn"></button>
                         </div>
                     </div>
                 </div>
@@ -201,236 +186,264 @@
             <div class="courses">
                 <h2>Popular courses</h2>
                 <p>Upgrade your scills with newest courses</p>
-                <div class="courses-item-mobile">
-                    <div class="courses-img">
-                        <img src="images/courses-image5.jpg">
-                        <div class="courses-date-time">
-                            <div class="courses-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                <p>5/10/2018</p>
+                <div class="carousel">
+                    <div class="carousel-items" id="cour-items">
+                        <div class="courses-item">
+                            <div class="courses-img">
+                                <a class="course-link" href="html_pages/course-graphic&web-design.html"><img class="img-course"></a>
+                                <div class="courses-date-time">
+                                    <div class="courses-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p class="course-date"></p>
+                                    </div>
+                                    <div class="courses-time">
+                                        <i class="far fa-clock"></i>
+                                        <p class="course-duration"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="courses-time">
-                                <i class="far fa-clock"></i>
-                                <p>10 Hours</p>
+                            <div class="courses-description">
+                                <h3 class="course-title"></h3>
+                                <p class="course-descr"></p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="courses-description">
-                        <h3>Business & Management</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="courses-teacher">
-                        <div class="course-teacher-img">
-                            <a href="html_pages/teacher_catherine.html"><img src="images/author-image2.jpg"></a>
-                            <div>
-                                <h4>Catherine</h4>
-                            </div>
-                        </div>
-                        <div class="course-teacher-button-free">
-                            <button>Free</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses-item-tablet">
-                    <div class="courses-img">
-                        <img src="images/courses-image3.jpg">
-                        <div class="courses-date-time">
-                            <div class="courses-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                <p>10/08/2018</p>
-                            </div>
-                            <div class="courses-time">
-                                <i class="far fa-clock"></i>
-                                <p>8 Hours</p>
+                            <div class="courses-teacher">
+                                <div class="course-teacher-img">
+                                    <a class="tcr-img" href="html_pages/teacher_catherine.html"><img class="course-teacher-img"></a>
+                                    <div class="course-teacher-name">
+                                        <h4 class="course-teacher"></h4>
+                                    </div>
+                                </div>
+                                <div class="course-teacher-button">
+                                    <button class="btn-price"></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="courses-description">
-                        <h3>Summer Kids</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="courses-teacher">
-                        <div class="course-teacher-img">
-                            <a href="html_pages/teacher_marc-wilson.html"><img src="images/author-image1.jpg"></a>
-                            <div>
-                                <h4>Mark Wilson</h4>
+                        <div class="courses-item">
+                            <div class="courses-img">
+                                <a class="course-link" href="html_pages/course-graphic&web-design.html"><img class="img-course"></a>
+                                <div class="courses-date-time">
+                                    <div class="courses-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p class="course-date"></p>
+                                    </div>
+                                    <div class="courses-time">
+                                        <i class="far fa-clock"></i>
+                                        <p class="course-duration"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-description">
+                                <h3 class="course-title"></h3>
+                                <p class="course-descr"></p>
+                            </div>
+                            <div class="courses-teacher">
+                                <div class="course-teacher-img">
+                                    <a class="tcr-img" href="html_pages/teacher_catherine.html"><img class="course-teacher-img"></a>
+                                    <div class="course-teacher-name">
+                                        <h4 class="course-teacher"></h4>
+                                    </div>
+                                </div>
+                                <div class="course-teacher-button">
+                                    <button class="btn-price"></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-teacher-button-pay">
-                            <button>USD 45</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses-item-desctop">
-                    <div class="courses-img">
-                        <a href="html_pages/course-graphic&web-design.html"><img src="images/courses-image2.jpg"></a>
-                        <div class="courses-date-time">
-                            <div class="courses-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                <p>20/07/2018</p>
+                        <div class="courses-item">
+                            <div class="courses-img">
+                                <a class="course-link" href="html_pages/course-graphic&web-design.html"><img class="img-course"></a>
+                                <div class="courses-date-time">
+                                    <div class="courses-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p class="course-date"></p>
+                                    </div>
+                                    <div class="courses-time">
+                                        <i class="far fa-clock"></i>
+                                        <p class="course-duration"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="courses-time">
-                                <i class="far fa-clock"></i>
-                                <p>4.5 Hours</p>
+                            <div class="courses-description">
+                                <h3 class="course-title"></h3>
+                                <p class="course-descr"></p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="courses-description">
-                        <h3>Graphic & Web Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="courses-teacher">
-                        <div class="course-teacher-img">
-                            <a href="html_pages/teacher_catherine.html"><img src="images/author-image2.jpg"></a>
-                            <div>
-                                <h4>Catherine</h4>
-                            </div>
-                        </div>
-                        <div class="course-teacher-button-pay">
-                            <button>USD 80</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses-item-desctop">
-                    <div class="courses-img">
-                        <a href="html_pages/course-marketing-communication.html"><img src="images/courses-image3.jpg"></a>
-                        <div class="courses-date-time">
-                            <div class="courses-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                <p>15/08/2018</p>
-                            </div>
-                            <div class="courses-time">
-                                <i class="far fa-clock"></i>
-                                <p>6 Hours</p>
+                            <div class="courses-teacher">
+                                <div class="course-teacher-img">
+                                    <a class="tcr-img" href="html_pages/teacher_catherine.html"><img class="course-teacher-img"></a>
+                                    <div class="course-teacher-name">
+                                        <h4 class="course-teacher"></h4>
+                                    </div>
+                                </div>
+                                <div class="course-teacher-button">
+                                    <button class="btn-price"></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="courses-description">
-                        <h3>Marketing Communication</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="courses-teacher">
-                        <div class="course-teacher-img">
-                            <a href="html_pages/teacher_jessie_ca.html"><img src="images/author-image3.jpg"></a>
-                            <div>
-                                <h4>Jessieca</h4>
+                        <div class="courses-item">
+                            <div class="courses-img">
+                                <a class="course-link" href="html_pages/course-graphic&web-design.html"><img class="img-course"></a>
+                                <div class="courses-date-time">
+                                    <div class="courses-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p class="course-date"></p>
+                                    </div>
+                                    <div class="courses-time">
+                                        <i class="far fa-clock"></i>
+                                        <p class="course-duration"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-description">
+                                <h3 class="course-title"></h3>
+                                <p class="course-descr"></p>
+                            </div>
+                            <div class="courses-teacher">
+                                <div class="course-teacher-img">
+                                    <a class="tcr-img" href="html_pages/teacher_catherine.html"><img class="course-teacher-img"></a>
+                                    <div class="course-teacher-name">
+                                        <h4 class="course-teacher"></h4>
+                                    </div>
+                                </div>
+                                <div class="course-teacher-button">
+                                    <button class="btn-price"></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-teacher-button-free">
-                            <button>Free</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses-item-desctop">
-                    <div class="courses-img">
-                        <a href="html_pages/course-summer-kids.html"><img src="images/courses-image4.jpg"></a>
-                        <div class="courses-date-time">
-                            <div class="courses-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                <p>10/08/2018</p>
+                        <div class="courses-item">
+                            <div class="courses-img">
+                                <a class="course-link" href="html_pages/course-graphic&web-design.html"><img class="img-course"></a>
+                                <div class="courses-date-time">
+                                    <div class="courses-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p class="course-date"></p>
+                                    </div>
+                                    <div class="courses-time">
+                                        <i class="far fa-clock"></i>
+                                        <p class="course-duration"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="courses-time">
-                                <i class="far fa-clock"></i>
-                                <p>8 Hours</p>
+                            <div class="courses-description">
+                                <h3 class="course-title"></h3>
+                                <p class="course-descr"></p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="courses-description">
-                        <h3>Summer Kids</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="courses-teacher">
-                        <div class="course-teacher-img">
-                            <a href="html_pages/teacher_marc-wilson.html"><img src="images/author-image1.jpg"></a>
-                            <div>
-                                <h4>Marc Wilson</h4>
+                            <div class="courses-teacher">
+                                <div class="course-teacher-img">
+                                    <a class="tcr-img" href="html_pages/teacher_catherine.html"><img class="course-teacher-img"></a>
+                                    <div class="course-teacher-name">
+                                        <h4 class="course-teacher"></h4>
+                                    </div>
+                                </div>
+                                <div class="course-teacher-button">
+                                    <button class="btn-price"></button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="course-teacher-button-pay">
-                            <button>USD 45</button>
                         </div>
                     </div>
                 </div>
                 <div class="courses-icons">
                     <div class="left-icon">
-                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-left" id="left"></i>
                     </div>
                     <div class="right-icon">
-                        <i class="fas fa-angle-right"></i>
+                        <i class="fas fa-angle-right" id="right"></i>
                     </div>
                 </div>
             </div>
             <div class="reviwes">
-                <h2>Student Reviwes</h2>
+                <h2>Student Reviews</h2>
                 <p>from around the world</p>
                  <div class="reviwes-items">
-                    <div class="reviwes-item-andrio">
-                        <div class="reviwes-student">
-                            <div class="reviwes-item-img">
-                                <img src="images/tst-image4.jpg">
+                    <div class="carousel-rev-items" id="rev-item">
+                        <div class="reviwes-item">
+                            <div class="reviwes-student">
+                                <div class="reviwes-item-img">
+                                    <img class="rev-img">
+                                </div>
+                                <div class="reviwes-item-name">
+                                    <h3 class="rev-name"></h3>
+                                    <span class="rev-position"></span>
+                                </div>
                             </div>
-                            <div class="reviwes-item-name">
-                                <h3>Andrio</h3>
-                                <span>Web Developer</span>
+                            <div class="reviwes-item-text">
+                                <p class="rev-text"></p>
                             </div>
-                        </div>
-                        <div class="reviwes-item-text">
-                            <p>Nam eget mi eu ante faucibus viverra nec sed magna. Vivamus viverra professional job search assistance. I'd recommend it to everyone.</p>
-                        </div>
-                        <div class="reviwes-mark">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="reviwes-item-jackson">
-                        <div class="reviwes-student">
-                            <div class="reviwes-item-img">
-                                <img src="images/tst-image1.jpg">
-                            </div>
-                            <div class="reviwes-item-name">
-                                <h3>Jackson</h3>
-                                <span>Shopify Developer</span>
+                            <div class="reviwes-mark">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <div class="reviwes-item-text">
-                            <p>You realy do help young creative minds to get quality education and professional job searc assistance. I'd recommend it to everyone!</p>
-                        </div>
-                        <div class="reviwes-mark">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="reviwes-item-camila">
-                        <div class="reviwes-student">
-                            <div class="reviwes-item-img">
-                                <img src="images/tst-image2.jpg">
+                        <div class="reviwes-item">
+                            <div class="reviwes-student">
+                                <div class="reviwes-item-img">
+                                    <img class="rev-img">
+                                </div>
+                                <div class="reviwes-item-name">
+                                    <h3 class="rev-name"></h3>
+                                    <span class="rev-position"></span>
+                                </div>
                             </div>
-                            <div class="reviwes-item-name">
-                                <h3>Camila</h3>
-                                <span>Marketing Manager</span>
+                            <div class="reviwes-item-text">
+                                <p class="rev-text"></p>
+                            </div>
+                            <div class="reviwes-mark">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <div class="reviwes-item-text">
-                            <p>Traying something new is exciting! Thanks for the amazing law course and the great teacher who was able to make it interesting.</p>
+                        <div class="reviwes-item">
+                            <div class="reviwes-student">
+                                <div class="reviwes-item-img">
+                                    <img class="rev-img">
+                                </div>
+                                <div class="reviwes-item-name">
+                                    <h3 class="rev-name"></h3>
+                                    <span class="rev-position"></span>
+                                </div>
+                            </div>
+                            <div class="reviwes-item-text">
+                                <p class="rev-text"></p>
+                            </div>
+                            <div class="reviwes-mark">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                        <div class="reviwes-mark">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="reviwes-item">
+                            <div class="reviwes-student">
+                                <div class="reviwes-item-img">
+                                    <img class="rev-img">
+                                </div>
+                                <div class="reviwes-item-name">
+                                    <h3 class="rev-name"></h3>
+                                    <span class="rev-position"></span>
+                                </div>
+                            </div>
+                            <div class="reviwes-item-text">
+                                <p class="rev-text"></p>
+                            </div>
+                            <div class="reviwes-mark">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="reviwes-slide-icon">
                     <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
+                    <i id="rLeft" class="fas fa-circle"></i>
+                    <i id="rRight" class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
                 </div>
             </div>
@@ -495,5 +508,8 @@
             </div>
         </div>
         <script src="https://kit.fontawesome.com/dda42268fb.js" crossorigin="anonymous"></script>
+        <script src="slider.js"></script>
+        <script src="jsCourses.js"></script>
+        <script src="jsReviews.js"></script>
     </body>
 </html>
