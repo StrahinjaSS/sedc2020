@@ -5,8 +5,8 @@
 .course-card-PC,
 .course-card-tablet {
     display: none;
-}
-.course-card-mobile {
+} 
+.one-row-courses {
     display: flex;
     flex-direction: column;
 }
@@ -107,6 +107,12 @@
     position: relative;
     left: 5px;
 }
+#left-arrow:hover,
+#right-arrow:hover{
+    color: rgb(114, 110, 110);
+    background-color: white;
+    border: solid 3px rgb(114, 110, 110);
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -174,11 +180,15 @@
      
     .course-card-tablet {
         display: none;
-    }
+    } 
     .one-row-courses {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         gap: 20px; 
+    }
+    .another-in-caurosel{
+        display: none;
     }
     .course-card-PC {
         display: flex;

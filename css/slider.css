@@ -5,18 +5,16 @@
 .slider-img {
     overflow: hidden;
 }
-.slider-img img {
+.cauroselImg {
     width: 100%; 
 }
-.text-on-slider-mobile {
+.text-on-slider {
     color: white;
     position: absolute;
     top: 20px;
     z-index: 1000;
 }
-.text-on-slider-other-devices {
-    display: none;
-}
+
 .slider-button {
     margin-top: 5px;
     background: none;
@@ -32,10 +30,8 @@
     .slider-img {
         height: 500px;
     }
-    .text-on-slider-mobile {
-        display: none;
-    }
-    .text-on-slider-other-devices {
+    
+    .text-on-slider {
         display: flex;
         flex-direction: column;
         color: white;
@@ -53,11 +49,11 @@
     .slider h1 {
         font-size: 45px;
     }
-    .text-on-slider-other-devices h1{
+    .text-on-slider h1{
         margin-bottom: 20px;
         width: 600px;
     }
-    .text-on-slider-other-devices p{
+    .text-on-slider p{
         margin: 0 0 30px 0;
         width: 700px;
         font-size: 20px;

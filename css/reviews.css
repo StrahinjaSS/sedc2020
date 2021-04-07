@@ -12,11 +12,7 @@
     font-size: 20px;
     margin-top: 0;
 }
-#review-card-Andrio,
-#review-card-Camila {
-    display: none;
-}
-#review-card-Jackson {
+.review-card {
     background-color: white;
     padding-bottom: 40px;
 }
@@ -49,30 +45,50 @@
     position: relative;
     padding-left: 30px;
 }
-.course-circles-mobile {
+.course-circles {
     position: relative;
     padding: 70px 0;
     text-align: center;
 }
-.course-circles-mobile i {
-    color: lightgray;
+.course-circles input {
+    color: rgb(233, 227, 227);
     height: 20px;
     width: 20px;
 }
-#dark-circle {
-    color: darkgrey;
+.course-circles {
+    display: flex;
+    justify-content: center;
 }
-.course-circles-tablet,
-.course-circles-PC {
-    display: none;
+#circleLeft{   
+    height: 10px;
+    width: 10px;
+    color: rgb(180, 179, 179);
+    border-radius: 50%;
+    border: solid 1px darkgray;
 }
+#circleRight{   
+    height: 10px;
+    width: 10px;
+    color: rgb(180, 179, 179);
+    border-radius: 50%;
+    border: solid 1px darkgray;
+}
+
+.course-circles div{
+    margin-right: 30px;
+}
+#circleLeft:hover {
+    background-color: darkgray;
+}
+#circleRight:hover {
+    background-color: darkgray;
+}
+
 
 @media only screen and (min-width: 768px) {
 
-    #review-card-Jackson {
-        display: none;
-    }
-    #review-card-Camila {
+    
+    .review-card {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -98,37 +114,11 @@
     .review-cards {
         display: flex;
     }
-    .review-card {
-        width: calc( 100% / 3);
-    }
-    #review-card-Andrio,
-    #review-card-Jackson {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        margin-right: 20px;
-        padding-bottom: 100px;
-        padding-top: 40px;
-    }
-    #review-card-Camila {
-        padding-bottom: 100px;
-        padding-top: 40px;
-    }
-    .course-circles-tablet {
-        display: none;
-    }
-    .course-circles-PC {
+    .course-circles {
         display: flex;
         justify-content: center;
         position: relative;
         padding: 50px 0 70px 0;
     }
-    .course-circles-PC i {
-        color: lightgray;
-        
-    }
-    #dark-circle {
-        position: relative;
-        right: 2px;
-    }
+    
 }
