@@ -14,15 +14,46 @@
     background-color: inherit;
     
 }
-.teachers .teachers-blog .teachers-blog-container:nth-child(2){
+.teachers .teachers-menu .teachers-blog .teachers-blog-container{
     display: none;
 }
+.teachers .teachers-menu .teachers-buttons{
+    padding: 20px 0px;
+    text-align: center;
+}
+.teachers .teachers-menu .teachers-buttons #left{
+    background-color: lightgray;
+    padding:  10px 15px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 5px;
+    outline: none;
+    border: none;
+}
+.teachers .teachers-menu .teachers-buttons #left i{
+    color: white;
+}
+.teachers .teachers-menu .teachers-buttons #right{
+    background-color: lightgray;
+    padding:  10px 15px;
+    display: inline-block;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+.teachers .teachers-menu .teachers-buttons #right i{
+    color: white;
+}
+/* .teachers .teachers-menu .teachers-blog .teachers-blog-container:nth-child(1){
+    display: block;
+} */
+/* 
 .teachers .teachers-blog .teachers-blog-container:nth-child(3){
     display: none;
 }
 .teachers .teachers-blog .teachers-blog-container:nth-child(4){
     display: none;
-}
+} */
 
 
 .teachers .teachers-menu .teachers-blog .teachers-blog-container{
@@ -65,18 +96,22 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .teachers .teachers-menu .teachers-buttons{
+        display: none;
+    }
     .teachers .teachers-menu .teachers-blog .teachers-blog-container{
         width: calc((100% / 2) - 10px);
-    }
-    .teachers .teachers-blog .teachers-blog-container:nth-child(2){
         display: block;
+    }
+    /* .teachers .teachers-blog .teachers-blog-container:nth-child(2){
+        
     }
     .teachers .teachers-blog .teachers-blog-container:nth-child(3){
         display: block;
     }
     .teachers .teachers-blog .teachers-blog-container:nth-child(4){
         display: block;
-    }
+    } */
 }
 @media screen and (min-width: 992px){
     .teachers{
@@ -88,7 +123,6 @@
     }
     .teachers .teachers-menu .teachers-blog .teachers-blog-container{
         width: calc((100% / 4) - 10px);
-    }
-    
-   
+        display: block;
+    }  
 }
