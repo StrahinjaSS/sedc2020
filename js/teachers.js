@@ -1,4 +1,4 @@
-baseUrl = 'https://60642520f091970017785074.mockapi.io/';
+// let baseUrl = 'https://60642520f091970017785074.mockapi.io/';
 const getTeachers = () => {
     let getFrom = new Request(baseUrl + 'teachers', ({
         method: 'GET',

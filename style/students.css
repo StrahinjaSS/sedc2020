@@ -6,14 +6,18 @@
     text-align: center;
 }
 .students .students-menu .students-personal-menu{
+    
     padding-top: 50px;
 }
+
 .students .students-menu .students-personal-menu .students-personal-blogs{
+    display: none;
     background-color: white;
     padding: 50px 30px;
 }
 .students .students-menu .students-personal-menu .students-personal-blogs .students-personal-blogs-heading{
     display: flex;   
+    height: 70px;
 }
 .students .students-menu .students-personal-menu .students-personal-blogs .students-personal-blogs-heading .students-personal-blogs-heading-image{
     width: 50px;
@@ -26,18 +30,32 @@
     width: 100%;
 }
 .students .students-menu .students-personal-menu .students-personal-blogs .students-personal-comments{
-    padding-top: 10px;
+    padding: 10px;
+    height: 150px;
+    overflow: hidden;
 }
 .students .students-menu .students-personal-menu .students-personal-blogs .stars{
-    padding-top: 10px;
+    padding: 10px;
 }
 .students .students-menu .students-personal-menu .students-personal-blogs .stars i{
     margin-right: 5px;
 }
-
-.students .students-button{
+.students .students-menu .students-button{
     text-align: center;
-    margin-top: 20px;
+}
+.students .students-menu .students-button .dots{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    background-color: lightblue;
+}
+.students .students-menu .students-button .dots:hover{
+    background-color: darkslateblue;
 }
 
 @media screen and (min-width: 992px){
@@ -52,7 +70,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .students .students-menu .students-personal-menu .students-personal-blogs{
+    /* .students .students-menu .students-personal-menu .students-personal-blogs{
         width: calc((100% / 3) - 30px);
-    }
+    } */
 }
