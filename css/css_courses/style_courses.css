@@ -4,6 +4,23 @@
     text-align: center;
     justify-content: center;
     background-color: white;
+    overflow: hidden;
+}
+.courses-item {
+    width: 306px;
+    height: 385px;
+}
+.carousel {
+    width: 920px;
+    height: 385px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.carousel-items {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
 }
 .courses h2 {
     padding-top: 50px;
@@ -136,9 +153,7 @@
 
 @media screen and (min-width: 768px) {
     
-    .courses-item {
-        display: block;
-    }
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -160,7 +175,7 @@
         padding: 10px;
     }
     .carousel {
-        width: 900px;
+        width: 918px;
         height: 385px;
         display: flex;
         flex-direction: row;
@@ -168,8 +183,6 @@
     }
     .carousel-items {
         display: flex;
-        transform: translateX(0);
-        transition: transform 0.5s ease-in-out;
     }
     
     .courses-date-time {

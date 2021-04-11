@@ -30,43 +30,17 @@ function renderReviwes(arrR) {
     });
 }
 
-const curRevItems = document.getElementById('rev-item');
-const leftBtnR = document.getElementById('rLeft');
-const rightBtnR = document.getElementById('rRight');
+const carRewItems = document.querySelector('.carousel-rev-items');
+const indicators = document.querySelectorAll('.reviwes-slide-icon i');
 
-const revItems = document.querySelectorAll('.reviwes-item');
+indexR = 0;
 
-let revIdx = 0
 
-let revInterval = setInterval(run, 5000)
-
-function run() {
-  revIdx++
-  changeRevImage()
-}
-
-function changeRevImage() {
-    if(revIdx > revItems.length - 1) {
-      revIdx = 0
-    } else if (revIdx < 0) {
-      revIdx = revItems.length - 1
-    }
-    curRevItems.style.transform = `translateX(${-revIdx * 300}px)`
-}
-
-function resetRevInterval() {
-  clearInterval(interval)
-  revInterval = setInterval(run, 5000)
-}
-
-rightBtnR.addEventListener('click', () => {
-  revIdx++
-  changeRevImage()
-  resetRevInterval()
-})
-
-leftBtnR.addEventListener('click', () => {
-  revIdx--
-  changeRevImage()
-  resetRevInterval()
-})
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document.querySelector('.active').classList.remove('active');
+    indicator.classList.add('active');
+    carRewItems.style.transform = 'translateX(' + (i) * -25 + '%)';  
+    indexR = i;
+  });
+});

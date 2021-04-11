@@ -22,7 +22,7 @@ function getSliders() {
 getSliders();
 
 function init(arr) {
-    render(arr[1]);
+    render(arr[0]);
     arr.push(arr.shift());
     setInterval(() => {
       render(arr[0]);

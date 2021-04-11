@@ -2,8 +2,26 @@
 .reviwes {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding-top: 60px;
     background-color: #f9f9f9;
+}
+.reviwes-items {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-rev-items {
+    display: flex;
+    height: 100%;
+    width: 400%;
+}
+.reviwes-item {
+    flex-basis: 100%;
+    display: flex;
 }
 .reviwes h2 {
     width: 100%;
@@ -51,48 +69,34 @@
     color: #3f51b5;
 }
 .reviwes-slide-icon {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
+    text-align: center;
     margin-bottom: 50px;
-    font-size: 10px;
-    color: gray;
-    margin-top: 20px;
+    font-size: 18px;
+    color: lightgray;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .reviwes-slide-icon i {
-    padding: 10px 10px 40px 10px;
+    padding-bottom: 40px;
+    padding-right: 10px;
 }
-.reviwes-slide-icon :nth-child(2) {
-    color: lightgrey;
+.active {
+    color: rgb(82, 101, 116);
 }
-.reviwes-slide-icon :nth-child(3) {
-    color: lightgrey;
+.reviwes-slide-icon i {
+    transform: translate(-50%);
 }
-.reviwes-slide-icon :nth-child(4) {
-    color: lightgrey;
-}
-
 .reviwes-item {
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-    .reviwes-slide-icon :nth-child(1) {
-        color: lightgrey;
-    }
-    .reviwes-slide-icon :nth-child(3) {
-        color: grey;
-    }
+    
 }
 
 @media screen and (min-width: 992px) {
-    .reviwes-item-jackson {
-        display: flex;
-    }
-    .reviwes-item-andrio {
-        display: flex;
-    }
     .reviwes {
         flex-direction: row;
         flex-wrap: wrap;
@@ -104,14 +108,11 @@
     .reviwes-item {
         margin: 0;
         padding: 10px;
-        width: 300px;
+        width: 350px;
     }
     .reviwes-items {
-        width: 300px;
+        width: 350px;
         height: 400px;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
     }
     .carousel-rev-items {
         display: flex;
@@ -120,7 +121,6 @@
     }
     .reviwes-slide-icon {
         width: 100%;
-        justify-content: center;
     }
     .reviwes-item-text {
         height: 100%;
